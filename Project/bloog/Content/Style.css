@@ -1,0 +1,142 @@
+﻿body {
+    background-image:url("bg6.jpg");
+ 
+}
+.cities .city a.singleCity {
+    height: 300px;
+    width: 300px;
+    background-color: aliceblue;
+    display: block;
+    border-radius: 150px;
+    margin: auto;
+}
+.cities .city {
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.cities .city a#Barcelona {
+    background-image:url("http://images.booking-channel.com/CLIENTES/www.hcristina.es/imagenes/1500/barcelona%20sagrada%20familia.jpg");
+    background-position-x: -300px;
+}
+.cities .city a#Copenhagen {
+    background-image:url("http://www.yesdelftstudents.nl/Portals/2/ArticleImages/copenhagen.jpg");
+}
+.cities .city a#London {
+    background-image:url("http://cdn.londonandpartners.com/visit/london-organisations/houses-of-parliament/63950-640x360-london-icons2-640.jpg");
+    background-position-x: -285px;
+}
+.cities .city a#Berlin {
+    background-image:url("http://www.stadtentwicklung.berlin.de/umwelt/landschaftsplanung/lapro/pix/luftbild_tiergarten2_470.jpg");
+}
+/*
+POSTS    
+*/
+.singlePost {
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+}
+.singlePost p.cityNamePost {
+    float: left;
+    width: auto;
+    min-width: 100px;
+    min-height: 50px;
+    text-align: center;
+    border-radius: 50px;
+    padding-top: 15px;
+    text-transform: uppercase;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 15px;
+}
+.singlePost p.Barcelona {
+    background-color:#b3d8f4;    
+    color:#072c92;
+}
+.singlePost p.London {
+    background-color:#ace7aa;    
+    color:#047829;
+}
+.singlePost p.Copenhagen {
+    background-color:#fafbab;
+    color:#f2c60f;    
+}
+.singlePost p.Berlin {
+    background-color:#ffc2c2;    
+    color:#920707;
+}
+.postInfo {
+    margin: 5px;
+}
+.postInfo p {
+    margin: 0;
+}
+.postInfo .postTitle {
+    text-transform: uppercase;
+    font-weight: bold;    
+}
+.cityFilter {
+    float: right;
+    margin-top: -23px;
+    text-align: center;
+    background-color: gainsboro;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 20px;
+}
+p.backToPosts {
+    float:right;
+}
+/*CITIES*/
+.backCities {
+    float: right;
+    margin-top: -70px;
+    background-color: currentcolor;
+    height: 50px;
+    width: 54px;
+    border-radius: 25px;
+    padding: 11px 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.backCities a {
+    color:#FFF;
+}
+/**/
+.newUser {
+    height: 300px;
+    width: 300px;
+    background-color: darkgrey;
+    border-radius: 150px;
+    float: left;
+    margin: 45px;
+    padding-top: 117px;
+    font-size: 45px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.newUser a {
+    color:#FFF;
+}
+.big {
+    font-size: 65px;
+}
+.backPosts {
+    float: left;
+    background-color: currentcolor;
+    height: 50px;
+    width: 54px;
+    border-radius: 25px;
+    padding: 11px 15px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.backPosts a {
+    color:#FFF;
+}
+.singleComment {
+    background-color: gainsboro;
+    padding: 10px;
+    border-radius: 12px;
+}

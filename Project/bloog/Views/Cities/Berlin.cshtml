@@ -1,0 +1,42 @@
+﻿@model bloog.Models.WeatherData
+@{
+    ViewBag.Title = "Berlin";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>@Html.DisplayFor(model => model.List[0].Name)</h1>
+<h4>@Html.DisplayFor(model => model.List[0].Sys.Country)</h4>
+<div class="backCities">@Html.ActionLink("<<", "Index", "Cities")</div>
+
+<hr />
+
+<img src="http://images.bwbx.io/cms/2012-04-12/tech_berlin16__01__630x420.jpg" />
+
+<div>
+    <h1>@Html.DisplayFor(model => model.List[0].Main.Temp)ºC</h1>
+    <h5>&nbsp;@Html.DisplayFor(model => model.List[0].Weather[0].Description)</h5>
+</div>
+
+<dl class="dl-horizontal">
+
+    <dt>Cloudiness</dt>
+    <dd>@Html.DisplayFor(model => model.List[0].Weather[0].Main)</dd>
+
+    <dt>@Html.DisplayNameFor(model => model.List[0].Main.Pressure)</dt>
+    <dd>@Html.DisplayFor(model => model.List[0].Main.Pressure) hPa</dd>
+
+    <dt>@Html.DisplayNameFor(model => model.List[0].Main.Humidity)</dt>
+    <dd>@Html.DisplayFor(model => model.List[0].Main.Humidity)%</dd>
+
+    <dt>Wind @Html.DisplayNameFor(model => model.List[0].Wind.Speed)</dt>
+    <dd>@Html.DisplayFor(model => model.List[0].Wind.Speed) mps</dd>
+
+    <dt>@Html.DisplayNameFor(model => model.List[0].Coord)</dt>
+    <dd>[ @Html.DisplayFor(model => model.List[0].Coord.Lon), @Html.DisplayFor(model => model.List[0].Coord.Lat) ]</dd>
+
+</dl>
+
+<p>
+    @*@Html.ActionLink("Edit", "Edit", new { id = Model.TestId }) |
+        @Html.ActionLink("Back to List", "Index")*@
+</p>

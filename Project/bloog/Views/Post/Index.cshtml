@@ -1,0 +1,32 @@
+﻿@model IEnumerable<bloog.Models.Post>
+@{
+    ViewBag.Title = "Post:Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 class="big">OPINIONS</h1>
+
+@Html.ActionLink("CREATE POST", "Create", "Post")<br /><br />
+
+
+<div class="allPosts col-md-8">
+    @foreach (var item in Model)
+    {
+        <div class="singlePost">
+            <p class="@item.City.CityName cityNamePost">@item.City.CityName</p>
+            <div class="postInfo">
+                <p class="postTitle">@item.Title</p>
+                <p>@Html.ActionLink("See post", "Details", new { Id = item.PostId })</p>
+            </div>
+        </div>
+    }
+</div>
+
+<div class="cityFilter col-md-2">
+    <h3>Filters</h3>
+    <p class="chooseCity">@Html.ActionLink("Barcelona", "Barcelona", "Post")</p>
+    <p class="chooseCity">@Html.ActionLink("London", "London", "Post")</p>
+    <p class="chooseCity">@Html.ActionLink("Copenhagen", "Copenhagen", "Post")</p>
+    <p class="chooseCity">@Html.ActionLink("Berlin", "Berlin", "Post")</p>
+</div>
+

@@ -1,0 +1,19 @@
+﻿@model bloog.Models.Post
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<h2>@Model.Title</h2><br />
+<h4>@Model.Body</h4><br />
+
+<h3>Comments</h3> <h5>@Html.ActionLink("Add Comment", "Create", "Comments")</h5>
+@foreach (var item in Model.Comments)
+{ 
+    <div class="singleComment">@Html.DisplayFor(modelItem => item.Text)</div><br />
+}
+    
+
+<div class="backPosts">@Html.ActionLink("<<", "Index", "Post")</div>

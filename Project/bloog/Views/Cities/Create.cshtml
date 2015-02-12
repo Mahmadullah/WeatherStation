@@ -1,0 +1,20 @@
+﻿@model bloog.Models.City
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Create City</h2>
+
+@using (Html.BeginForm())
+{
+
+    <p>City: @Html.EditorFor(m => m.CityName)</p>
+
+    <p>Country shortcut: @Html.EditorFor(m => m.Country)</p>
+    @Html.ValidationMessageFor(m => m.Country)
+
+    <input type="submit" value="Create City" /><br />
+}
+<br />
+<p>@Html.ActionLink("<< Back", "Index", "Cities")</p>

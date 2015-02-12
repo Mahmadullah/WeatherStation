@@ -1,0 +1,22 @@
+﻿@model bloog.Models.User
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <h1 class="big page-header">STIL NOT A MEMBER?</h1><br />
+        <h2>You don't recieve our lastest information yet?</h2>
+        <h3>You can register now for free and we'll keep you updated!</h3><br />
+        <h3>Click @Html.ActionLink("here", "Create", "User") to register</h3>
+    </div>
+</body>
+</html>

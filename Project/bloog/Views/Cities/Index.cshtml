@@ -1,0 +1,19 @@
+﻿@model IEnumerable<bloog.Models.City>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 class="big">Cities</h1><br />
+
+<div class="row placeholders cities">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-5 placeholder city">
+            <a href="@Url.Action(@item.CityName, "Cities")" class="singleCity" id="@item.CityName"></a>
+            <h4>@item.CityName</h4>
+            <span class="text-muted">@item.Country</span>
+        </div>
+    }
+</div>
